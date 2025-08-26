@@ -1,6 +1,6 @@
 ### ✅ Checklist de Boas Práticas para Desenvolvimento de APIs
 
-**TODO** 🧪 **Implementar testes automatizados (unitários e funcionais)** -- FEITO, PRETENDO MELHORAR MAIS
+**TODO** 🧪 **Implementar testes automatizados (unitários e funcionais)**
 - Testes automatizados são essenciais para garantir a qualidade e manutenibilidade do código.
 - Evite focar apenas nos "caminhos felizes" — inclua testes para cenários de erro, validações e casos extremos.
 - Garanta que os testes sejam efetivos, cobrindo regras de negócio e integrações críticas.
@@ -15,7 +15,7 @@
 - Utilize níveis apropriados (INFO, DEBUG, WARN, ERROR) para facilitar a análise.
 - Prefira logs estruturados (como JSON) para integração com ferramentas de monitoramento.
 
-**TODO** 🩺 **Adicionar endpoint de healthcheck (verificação de saúde)**
+**TODO** 🩺 **Adicionar endpoint de healthcheck (verificação de saúde)**  -- FEITO, PRETENDO MELHORAR MAIS
 - Crie um endpoint (ex: `GET /health`) que retorne o status da aplicação.
 - Inclua informações como: conectividade com banco de dados, uso de recursos ou serviços externos.
 - Esse endpoint é essencial para orquestradores (como Kubernetes) e sistemas de monitoramento.
