@@ -15,7 +15,7 @@ public class receiveTransaction {
     private static final Logger log = LoggerFactory.getLogger(receiveTransaction.class);
 
     @PostMapping("/transacao")
-    public void  postTransaction(@RequestBody transaction transaction1, HttpServletResponse response){
+    public transaction  postTransaction(@RequestBody transaction transaction1, HttpServletResponse response){
         int statusCode = validadeRequest(transaction1);
 
         if (statusCode == 201) {
@@ -27,7 +27,9 @@ public class receiveTransaction {
         if (result.eh == exceptionsHandler.SUCESSES) {System.out.println("Achado");}
 
         response.setStatus(statusCode);
+        return transaction1;
     }
+
 
     public int validadeRequest (transaction transaction1){
 
